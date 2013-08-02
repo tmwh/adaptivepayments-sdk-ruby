@@ -937,6 +937,7 @@ module PayPal::SDK
         def self.load_members
           object_of :requestEnvelope, RequestEnvelope, :required => true
           object_of :payKey, String, :required => true
+          object_of :receiver, Receiver, :required => true
           object_of :initiatingEntity, InitiatingEntity
           object_of :displayOptions, DisplayOptions
           object_of :shippingAddressId, String
